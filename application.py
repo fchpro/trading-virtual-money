@@ -53,7 +53,7 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///finance.db")
 # con = sl.connect("finance.db", check_same_thread=False)
-
+os.environ['API_KEY'] = "sk_4cae1828a0194fcc9c4a82666dc37315"
 # Make sure API key is set - assuming you uploaded it into the os environment
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
